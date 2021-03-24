@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Beauty
 {
@@ -21,6 +10,20 @@ namespace Beauty
         public Yacheyka()
         {
             InitializeComponent();
+        }
+        public MainWindow MainWindow;
+        private void edit_Click(object sender, RoutedEventArgs e)
+        {
+            add_edit open = new add_edit();
+            open.id.Content = id.Content;
+            open.name.Text = name.Text;
+            open.price.Text = (string)price.Content;
+            open.photo.Source = photo.Source;
+            open.manufactor.Text = (string)manufactor.Content;
+            open.act.SelectedIndex = Convert.ToInt32(act.Content);
+            open.description.Text = description.Text;
+            open.MainWindow = MainWindow;
+            open.Show();
         }
     }
 }

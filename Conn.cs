@@ -8,6 +8,6 @@ namespace Beauty
 {
     class Conn
     {
-        public static string String { get; } = "Data Source = COLLIDER\\SQLEXPRESS; Initial Catalog = BeautyDB; Integrated Security = true";
+        public static string String { get; } = "Data Source = tcp:303-15; Initial Catalog = BeautyDB; Integrated Security = true";
     }
 }
