@@ -14,13 +14,13 @@
         <Label Content="Производитель" HorizontalAlignment="Left" Margin="266,62,0,0" VerticalAlignment="Top"/>
         <Label Content="Цена" HorizontalAlignment="Left" Margin="266,97,0,0" VerticalAlignment="Top"/>
         <Label Content="Описание" HorizontalAlignment="Left" Margin="266,130,0,0" VerticalAlignment="Top"/>
-        <Image x:Name="photo" HorizontalAlignment="Left" Height="173" Margin="35,10,0,0" VerticalAlignment="Top" Width="183" Source="ava.png" MouseLeftButtonDown="photo_MouseLeftButtonDown"/>
-        <ComboBox x:Name="act" HorizontalAlignment="Left" Margin="353,184,0,0" VerticalAlignment="Top" Width="120">
+        <Image x:Name="photo" HorizontalAlignment="Left" Height="199" Margin="30,10,0,0" VerticalAlignment="Top" Width="210" Source="ava.png" MouseLeftButtonDown="photo_MouseLeftButtonDown"/>
+        <ComboBox x:Name="act" HorizontalAlignment="Left" Margin="372,181,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Активен" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="Не активен" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
         <Label x:Name="id" Content="id" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="498,184,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click"/>
+        <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="507,181,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click"/>
         <Label Content="Активность" HorizontalAlignment="Left" Margin="265,181,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="manufactor" HorizontalAlignment="Left" Margin="372,66,0,0" VerticalAlignment="Top" Width="120"/>
 

@@ -13,7 +13,7 @@
         </ScrollViewer>
         <TextBox x:Name="search" HorizontalAlignment="Left" Height="23" Margin="646,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="search_TextChanged"/>
         <Label Content="Поиск" HorizontalAlignment="Left" Margin="646,78,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="add" Content="Добавить" HorizontalAlignment="Left" Margin="664,227,0,0" VerticalAlignment="Top" Width="76" Click="add_Click"/>
+        <Button x:Name="add" Content="Добавить" HorizontalAlignment="Left" Margin="661,170,0,0" VerticalAlignment="Top" Width="76" Click="add_Click"/>
 
     </Grid>
 

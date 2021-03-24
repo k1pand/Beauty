@@ -31,8 +31,16 @@ namespace Beauty
             if (saveFile.FileName != "")
             {
                 photo.Source = new BitmapImage(new Uri(saveFile.FileName));
-                File.Copy(saveFile.FileName, @".\Товары салона красоты\" + saveFile.SafeFileName, true);
-                file_Name = saveFile.SafeFileName;
+                try
+                {
+                    File.Copy(saveFile.FileName, @".\Товары салона красоты\" + saveFile.SafeFileName, true);
+                    file_Name = saveFile.SafeFileName;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Выбери другую фотку козел!");
+                }
+              
             }
         }
 
