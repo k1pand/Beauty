@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Beauty"
         mc:Ignorable="d"
-        Title="Добавление / Редактирование" Height="250" Width="600" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="Добавление / Редактирование" Height="250" Width="600" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <TextBox x:Name="name" HorizontalAlignment="Left" Height="38" Margin="372,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
         <TextBox x:Name="price" HorizontalAlignment="Left" Height="22" Margin="372,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -14,15 +14,11 @@
         <Label Content="Производитель" HorizontalAlignment="Left" Margin="266,62,0,0" VerticalAlignment="Top"/>
         <Label Content="Цена" HorizontalAlignment="Left" Margin="266,97,0,0" VerticalAlignment="Top"/>
         <Label Content="Описание" HorizontalAlignment="Left" Margin="266,130,0,0" VerticalAlignment="Top"/>
-        <Image x:Name="photo" HorizontalAlignment="Left" Height="199" Margin="30,10,0,0" VerticalAlignment="Top" Width="210" Source="ava.png" MouseLeftButtonDown="photo_MouseLeftButtonDown"/>
-        <ComboBox x:Name="act" HorizontalAlignment="Left" Margin="372,181,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Активен" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem Content="Не активен" HorizontalAlignment="Left" Width="118"/>
-        </ComboBox>
+        <Image x:Name="photo" HorizontalAlignment="Left" Height="219" Margin="30,0,0,0" VerticalAlignment="Top" Width="214" Source="ava.png" MouseLeftButtonDown="photo_MouseLeftButtonDown"/>
         <Label x:Name="id" Content="id" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="507,181,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click"/>
-        <Label Content="Активность" HorizontalAlignment="Left" Margin="265,181,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="manufactor" HorizontalAlignment="Left" Margin="372,66,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="Check" Content="Активен" HorizontalAlignment="Left" Margin="372,186,0,0" VerticalAlignment="Top" Width="90"/>
 
     </Grid>
 </Window>

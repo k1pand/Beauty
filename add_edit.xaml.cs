@@ -38,7 +38,7 @@ namespace Beauty
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Выбери другую фотку козел!");
+                    MessageBox.Show("Выбери другую фотку!");
                 }
               
             }
@@ -89,7 +89,7 @@ namespace Beauty
                                                            ,'{price.Text}'
                                                            ,'{description.Text}'
                                                            {(file_Name != "" ? @",'Товары салона красоты\" + file_Name + "'" : ",'Товары салона красоты\\ava.png'")}
-                                                           ,{act.SelectedIndex}
+                                                           ,'{(Check.IsChecked)}'
                                                            ,{(manufactor.SelectedIndex + 1).ToString()})", connection);
 
                     try
@@ -122,6 +122,11 @@ namespace Beauty
                     }
                 }
             }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MainWindow.Show();
         }
     }
 }

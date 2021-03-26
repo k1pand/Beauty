@@ -41,7 +41,7 @@ namespace Beauty
                         products.price.Content = String.Format("{0:D}", Convert.ToInt32(reader[2]));
                         products.description.Text = reader[3].ToString();
                         products.photo.Source = new BitmapImage(new Uri(Directory.GetCurrentDirectory() + "\\" + reader[4].ToString().Replace(" Товары салона красоты", "Товары салона красоты")));
-                        products.act.Content = reader[5];
+                        products.Check.IsChecked = Convert.ToBoolean(reader[5].ToString());
                         products.MainWindow = this;
                         products.manufactor.Content = reader[6];
                         list.Children.Add(products);
@@ -65,6 +65,8 @@ namespace Beauty
             add_edit open = new add_edit();
             open.MainWindow = this;
             open.Show();
+            this.Hide();
+            
         }
 
         private void search_TextChanged(object sender, TextChangedEventArgs e)
