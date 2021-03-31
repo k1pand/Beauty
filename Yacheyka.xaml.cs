@@ -8,6 +8,9 @@ namespace Beauty
 
     public partial class Yacheyka : UserControl
     {
+
+        public static string[] linkPhoto = new string[] { };
+
         public Yacheyka()
         {
             InitializeComponent();
@@ -29,15 +32,6 @@ namespace Beauty
             MainWindow.Hide();
             open.ShowDialog();
         }
-
-        private void Check_Loaded(object sender, RoutedEventArgs e)
-        {
-            if (!(bool)Check.IsChecked)
-            {
-                activ.Visibility = Visibility.Visible;
-                //   edit.Background = new SolidColorBrush(Color.FromArgb(207,255,255);
-                fon.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
-            }
-        }
     }
 }
+

@@ -145,5 +145,6 @@
   <ItemGroup>
     <Resource Include="beauty_logo.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

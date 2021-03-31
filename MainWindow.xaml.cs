@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace Beauty
@@ -41,7 +42,7 @@ namespace Beauty
                         products.price.Content = String.Format("{0:D}", Convert.ToInt32(reader[2]));
                         products.description.Text = reader[3].ToString();
                         products.photo.Source = new BitmapImage(new Uri(Directory.GetCurrentDirectory() + "\\" + reader[4].ToString().Replace(" Товары салона красоты", "Товары салона красоты")));
-                        products.Check.IsChecked = Convert.ToBoolean(reader[5].ToString());
+                        products.fon.Background = !(bool)reader[5] ? new SolidColorBrush(Color.FromRgb(229, 229, 229)) : Brushes.Transparent;
                         products.MainWindow = this;
                         products.manufactor.Content = reader[6];
                         list.Children.Add(products);

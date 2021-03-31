@@ -6,9 +6,9 @@
              xmlns:local="clr-namespace:Beauty"
              mc:Ignorable="d" 
             Height="300" Width="300">
-    <Grid x:Name="fon" Background="White" >
+    <Grid x:Name="fon" Background="Transparent" >
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300"/>
-        <Image x:Name="photo" HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="196" Source="ava.png" Margin="3,3,0,0"/>
+        <Image x:Name="photo" HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="196" Source="C:\Users\303\source\repos\B\bin\Debug\Товары салона красоты\1781674-2.jpg" Margin="3,3,0,0" Stretch="Fill"/>
         <TextBlock x:Name="name" HorizontalAlignment="Left" Margin="10,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="156"><Run Text="Наименование товара"/><LineBreak/><Run/></TextBlock>
         <Label x:Name="price" Content="Цена" HorizontalAlignment="Right" Margin="0,51,20,0" VerticalAlignment="Top" Height="27" Width="82"/>
         <Button x:Name="edit" Content="Редактировать" HorizontalAlignment="Left" Margin="185,256,0,0" VerticalAlignment="Top" Width="95" Click="edit_Click" />
@@ -16,7 +16,7 @@
         <TextBlock x:Name="description" HorizontalAlignment="Left" Margin="211,116,0,0" TextWrapping="Wrap" Text="Описание" VerticalAlignment="Top" Width="78" Height="79"/>
         <Label x:Name="id" Content="id" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="28" Foreground="White"/>
         <Label x:Name="activ" Content="не активен" HorizontalAlignment="Left" Margin="185,224,0,0" VerticalAlignment="Top" Width="78" Foreground="Black" Height="27" Visibility="Hidden"/>
-        <CheckBox x:Name="Check" Margin="185,211,24,73" Height="16" IsEnabled="False" Loaded="Check_Loaded" Visibility="Hidden"/>
+        <CheckBox x:Name="Check" Margin="185,211,24,73" Height="16" IsEnabled="False" Visibility="Hidden"/>
 
     </Grid>
 </UserControl>
